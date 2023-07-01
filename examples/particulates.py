@@ -5,6 +5,8 @@ from pms5003 import PMS5003, ReadTimeoutError
 import logging
 
 logging.basicConfig(
+    filename='particulates.log'
+    filemode ='w'
     format='%(asctime)s.%(msecs)03d %(levelname)-8s %(message)s',
     level=logging.INFO,
     datefmt='%Y-%m-%d %H:%M:%S')
