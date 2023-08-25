@@ -55,7 +55,7 @@ try:
 
         mycursor = mydb.cursor()
         sql = "INSERT INTO sensor (datetime, temperature, pressure, humidity) VALUES (%s, %s, %s, %s)"
-        val = (timenow, temperature, humidity, pressure)
+        val = (timenow, temperature, pressure, humidity)
         mycursor.execute(sql, val)
 
         mydb.commit()
